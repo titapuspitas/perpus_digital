@@ -1,5 +1,6 @@
 <template>
     <div>
+        <nuxt-link to="/tambah">isi buku tamu</nuxt-link>
         <table border="1" widht="50%">
             <thead>
                 <tr>
@@ -24,17 +25,16 @@
 </template>
 
 <script setup>
-const client = useSupabaseClient()
-const visitors = ref([])
+const client=useSupabaseClient()
+const visitors=ref([])
 
 async function getData() {
-    const { data, error } = await client
+    const { data, error }=await client
         .from ("pengunjung")
         .select('*')
-    if(data) visitors.value = data
+    if(data) visitors.value=data
 }
 
 onMounted(() => getData())
-
 
 </script>
