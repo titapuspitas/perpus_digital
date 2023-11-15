@@ -1,13 +1,15 @@
 <template>
+    <h2 class="text-center">Riwayat pengunjung</h2> <br>
+    <nuxt-link to="/tambah">isi buku tamu</nuxt-link>
     <div>
-        <nuxt-link to="/tambah">isi buku tamu</nuxt-link>
-        <table border="1" widht="50%">
-            <thead>
+        <table class="table">
+            <thead class="table-primary">
                 <tr>
                     <th>#</th>
                     <th>tgl dan waktu</th>
                     <th>nama</th>
                     <th>anggota</th>
+                    <th>kelas</th>
                     <th>keperluan</th>
                 </tr>
             </thead>
