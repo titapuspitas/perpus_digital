@@ -19,7 +19,12 @@
         <input v-model="form.kelas" type="text" class="form-control" placeholder="kelas" />
       </div>
       <div class="mb-3">
-        <textarea v-model="form.keperluan" cols="30" rows="3" placeholder="keperluan" class="form-control"></textarea>
+        <select v-model="form.keperluan" class="form-control">
+          <option> Pilih keperluan </option>
+          <option> membaca buku </option>
+          <option> peminjam buku </option>
+          <option> mengembalikan buku </option>
+        </select>
       </div>
       <button type="submit" class="btn btn-outline-primary">Kirim</button>
       <nuxt-link to="/">Kembali</nuxt-link>
