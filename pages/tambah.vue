@@ -9,7 +9,7 @@
       </div>
       <div class="mb-3">
         <select v-model="form.anggota" class="form-control">
-          <option value="pilih keanggotaan">Pilih keanggotaan</option>
+          <option value="pilih keanggotaan"> </option>
           <option value="1">Siswa</option>
           <option value="2">Guru</option>
           <option value="3">Staf</option>
@@ -20,7 +20,7 @@
       </div>
       <div class="mb-3">
         <select v-model="form.keperluan" class="form-control">
-          <option> Pilih keperluan </option>
+          <option value="pilih keperluan"> </option>
           <option> membaca buku </option>
           <option> peminjam buku </option>
           <option> mengembalikan buku </option>
